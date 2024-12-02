@@ -10,4 +10,4 @@ Instructions:
    e.g. `pyenv activate sim-graph-venv`
 3. Install required libraries
    e.g. `pip install -r requirements.in`
-4. All god now, run `jupyter notebook` from terminal and then open `reroute.ipynb`.
+4. All god now, run `jupyter notebook` from terminal and then open `experiment.ipynb`.
