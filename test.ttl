@@ -1,0 +1,33 @@
+@prefix NCBI_Taxon: <http://identifiers.org/taxonomy:> .
+@prefix bqbiol: <http://biomodels.net/biology-qualifiers/> .
+@prefix go: <http://identifiers.org/GO:> .
+@prefix local: <./test.ttl#> .
+@prefix model_base: <./test.cellml#> .
+
+model_base:bioProcID2 bqbiol:isPropertyOf local:local_bioProcID2 ;
+    bqbiol:isVersionOf NCBI_Taxon:9606 .
+
+model_base:mediatorID2 bqbiol:isPropertyOf local:local_mediatorID2 ;
+    bqbiol:isVersionOf NCBI_Taxon:9606 .
+
+model_base:sinkID2 bqbiol:isPropertyOf local:local_sinkID2 ;
+    bqbiol:isVersionOf NCBI_Taxon:9606 .
+
+model_base:sourceID2 bqbiol:isPropertyOf local:local_sourceID2 ;
+    bqbiol:isVersionOf NCBI_Taxon:9606 .
+
+local:local_bioProcID2 bqbiol:hasMediator local:local_mediatorID2 ;
+    bqbiol:hasSink local:local_sinkID2 ;
+    bqbiol:hasSource local:local_sourceID2 ;
+    bqbiol:is go:0005619 ;
+    bqbiol:isPartOf go:0005620 .
+
+local:local_mediatorID2 bqbiol:is go:0005624 ;
+    bqbiol:isPartOf go:0005620 .
+
+local:local_sinkID2 bqbiol:is go:0005623 ;
+    bqbiol:isPartOf go:0005622 .
+
+local:local_sourceID2 bqbiol:is go:0005623 ;
+    bqbiol:isPartOf go:0005621 .
+

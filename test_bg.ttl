@@ -1,0 +1,19 @@
+@prefix bqbiol: <http://biomodels.net/biology-qualifiers/> .
+@prefix go: <http://identifiers.org/GO:> .
+@prefix model_base: <./bg.json#> .
+
+model_base:bioProcID bqbiol:hasMediator model_base:mediatorID ;
+    bqbiol:hasSink model_base:sinkID ;
+    bqbiol:hasSource model_base:sourceID ;
+    bqbiol:is go:0005619 ;
+    bqbiol:isPartOf go:0005620 .
+
+model_base:mediatorID bqbiol:is go:0005624 ;
+    bqbiol:isPartOf go:0005620 .
+
+model_base:sinkID bqbiol:is go:0005623 ;
+    bqbiol:isPartOf go:0005622 .
+
+model_base:sourceID bqbiol:is go:0005623 ;
+    bqbiol:isPartOf go:0005621 .
+
